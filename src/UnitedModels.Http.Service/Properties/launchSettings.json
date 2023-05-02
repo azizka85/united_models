@@ -1,0 +1,12 @@
+﻿{
+  "profiles": {
+    "UnitedModels.Http.Service": {
+      "commandName": "Project",
+      "dotnetRunMessages": "true",
+      "applicationUrl": "http://localhost:8177",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      }
+    }
+  }
+}

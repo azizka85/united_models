@@ -1,0 +1,28 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net5.0</TargetFramework>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Google.Protobuf" Version="3.22.3" />
+      <PackageReference Include="Grpc.AspNetCore" Version="2.52.0" />
+      <PackageReference Include="Grpc.Net.Client" Version="2.52.0" />
+      <PackageReference Include="Grpc.Tools" Version="2.52.0">
+        <PrivateAssets>all</PrivateAssets>
+        <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      </PackageReference>
+    </ItemGroup>
+
+    <ItemGroup>
+        <Protobuf Include="Data\Address.proto" Access="Public" GrpcServices="None" />
+        <Protobuf Include="Data\Person.proto" Access="Public" GrpcServices="None" AdditionalImportDirs="." />
+        <Protobuf Include="PersonService.proto" Access="Public" GrpcServices="Both" AdditionalImportDirs="." />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\UnitedModels\UnitedModels.csproj" />
+    </ItemGroup>
+
+</Project>

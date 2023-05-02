@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+package UnitedModels.Protos.Person;
+
+import "google/protobuf/empty.proto";
+
+import "Data/Person.proto";
+
+service PersonService {
+  rpc Get(GetRequest) returns (Data.Person);
+  rpc List(google.protobuf.Empty) returns (ListResponse);
+}
+
+message GetRequest {
+  int64 Id = 1;
+}
+
+message ListResponse {
+  repeated Data.Person Data = 1;
+}

@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package UnitedModels.Protos.Data;
+
+message Address {
+  int64 Id = 1;
+  string Data = 2;
+  optional int32 LineIndex = 3;
+}

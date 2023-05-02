@@ -1,0 +1,12 @@
+﻿{
+  "profiles": {
+    "UnitedModels.Map.Grpc.Service": {
+      "commandName": "Project",
+      "dotnetRunMessages": "true",
+      "applicationUrl": "http://localhost:8377",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      }
+    }
+  }
+}
